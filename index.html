@@ -1,0 +1,47 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header>
+            <h1>Invoice creator</h1>
+            <p>Thanks for choosing FeelGood.Inc!</p>
+        </header>
+        
+        <div id="invoice-container">
+            
+            <div class="btns">
+                <button id="washCar-btn">Wash Car: £10</button>
+                <button id="mowLawn-btn">Mow Lawn: £20</button>
+                <button id="pullWeeds-btn">Pull Weeds: £30</button>
+            </div>
+            <div id="service-headers">
+                <span>TASK</span>
+                <span>TOTAL</span>
+            </div>
+            <div id="services-list">
+                <ul id="list-box-el">
+                    <li class="list-item">
+                        <p class="task"></p>
+                    </li>
+                </ul>
+            </div>
+            <hr/>
+            
+            <div class="total-section">
+                <div class="total-headers">
+                    <span>NOTES</span>
+                    <span>TOTAL AMOUNT</span>
+                </div>
+                <div class="total">
+                    <span>We accept cash, credit card, or PayPal</span>
+                    <span id="total-sum">£0</span>
+                </div>
+            </div>
+            
+            <button id="send-btn">Send invoice</button>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
